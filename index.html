@@ -1,1 +1,41 @@
-<!--index-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="output">
+        <input id="display" readonly>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="btn1" onclick="appendDisplay('1')">1</button>
+        <button class="btn" id="btn2" onclick="appendDisplay('2')">2</button>
+        <button class="btn" id="btn3" onclick="appendDisplay('3')">3</button>
+        <button class="btn" id="btn4" onclick="appendDisplay('4')">4</button>
+        <button class="btn" id="btn5" onclick="appendDisplay('5')">5</button>
+        <button class="btn" id="btn6" onclick="appendDisplay('6')">6</button>
+        <button class="btn" id="btn7" onclick="appendDisplay('7')">7</button>
+        <button class="btn" id="btn8" onclick="appendDisplay('8')">8</button>
+        <button class="btn" id="btn9" onclick="appendDisplay('9')">9</button>
+        <button class="btn" id="add" onclick="appendDisplay('+')">+</button>
+        <button class="btn" id="btn0" onclick="appendDisplay('0')">0</button>
+        <button class="btn" id="subtract" onclick="appendDisplay('-')">-</button>
+        <button class="btn" id="multiply" onclick="appendDisplay('*')">*</button>
+        <button class="btn" id="divide" onclick="appendDisplay('/')">/</button>
+        <button class="btn" id="equals" onclick="calculate()">=</button>
+        <button class="btn" id="clear" onclick="displayClear()">C</button>
+        <button class="btn" id="decimal" onclick="appendDisplay('.')">.</button>
+        <button class="btn" id="backspace" onclick="backspace()"><img src="backspaceIcon.png" alt="backspace"></button>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
